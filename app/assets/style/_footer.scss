@@ -2,10 +2,11 @@
   background: #aa0601;
 
   .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    align-items: center;
     padding-top: 32px;
+    @include pad {
+      padding-top: 26px;
+    }
+  }
 
     .footerStart {
       display: flex;
@@ -13,7 +14,7 @@
       text-decoration: none;
       color: white;
       border-bottom: 1px solid #FFFFFF;
-      padding-bottom: 24px;
+      padding-bottom: 8px;
     }
 
     .footerEnd {
@@ -21,18 +22,13 @@
       color: white;
       display: flex;
       justify-content: space-between;
-      padding-top: 32px;
-      padding-bottom: 39px;
-      @include pad{
-        padding-top: 24px;
-      }
-      @include mob{
-        padding-top: 16px;
+
+      @include mob {
+
         flex-direction: column;
       }
     }
   }
-}
 
 .footer .container .footerStart .footerLeft .Submenu {
   display: flex;
@@ -48,6 +44,8 @@
 
       @include pad {
         margin-right: 40px;
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }
@@ -59,14 +57,45 @@
 
 .footer .container .footerStart .footerLeft .contact {
   margin-top: 36px;
+  @include pad{
+    margin-top: 18px;
+  }
+  @include mob{
+    margin-top: 0;
+  }
 
   li {
     display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+
+    @include pad {
+      margin-bottom: 14px;
+    }
+
+    @include mob {
+      margin-bottom: 7px;
+    }
 
     img {
-      padding: 6px;
+      width: 48px;
+      height: 48px;
       margin-right: 16px;
       display: block;
+
+      @include pad {
+        width: 24px;
+        height: 24px;
+
+        margin-right: 8px;
+      }
+
+      @include mob {
+        width: 20px;
+        height: 20px;
+
+        margin-right: 4px;
+      }
     }
 
     a {
@@ -97,17 +126,60 @@
     img {
       margin-left: 32px;
       padding-top: 12px;
+      @include pad{
+        width: 24px;
+
+      }
+      @include mob{
+        width: 24px;
+
+      }
     }
   }
 }
 
 
 .footer .container .footerEnd {
+  .copyright{
+    padding-top: 32px;
+    padding-bottom: 39px;
+    @include pad{
+      padding-top: 24px;
+      padding-bottom: 32px;
+    }
+    @include mob{
+      padding-top: 16px;
+      padding-bottom: 0;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
   .law {
+    padding-top: 32px;
+    padding-bottom: 39px;
+    @include pad{
+      padding-top: 36px;
+      padding-bottom: 21px;
+    }
+    @include mob{
+      padding-top: 0;
+      padding-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+    }
     a {
       text-decoration: none;
       color: white;
       margin-left: 48px;
+      @include pad{
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 24px;
+      }
+      @include mob{
+        margin-left: 0;
+        margin-top: 8px;
+      }
     }
   }
 
