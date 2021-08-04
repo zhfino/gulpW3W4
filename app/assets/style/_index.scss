@@ -10,7 +10,7 @@
         background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/banner-sm.png');
         height: 394px;
         width: 375px;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat;
     }
 
     .container {
@@ -138,6 +138,291 @@
             font-weight: normal;
             color: #000000;
             padding-bottom: 25px;
+        }
+    }
+}
+
+.productType {
+    text-align: center;
+    padding-bottom: 80px;
+
+    @include pad {
+        padding-bottom: 56px;
+    }
+
+    @include mob {
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        color: #650300;
+        padding-top: 60px;
+        padding-bottom: 8px;
+
+
+        @include pad {
+            font-size: 32px;
+            line-height: 48px;
+            padding-top: 40px;
+            padding-bottom: 24px;
+        }
+
+        @include mob {
+            padding-top: 32px;
+            padding-bottom: 20px;
+            font-size: 24px;
+            line-height: 48px;
+        }
+    }
+
+
+    .productBoxL {
+        display: flex;
+
+        @include mob {
+            margin-bottom: 8px;
+        }
+
+        li {
+            padding-top: 32px;
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+
+            @include pad {
+                padding-top: 8px;
+            }
+
+            @include mob {
+                margin-right: 0px;
+            }
+
+        }
+    }
+
+
+    .productBoxR {
+        display: flex;
+        flex-direction: row-reverse;
+
+        @include pad {
+            flex-direction: row;
+        }
+
+        @include mob {
+            margin-bottom: 8px;
+        }
+
+        li {
+            padding-top: 32px;
+            display: flex;
+            align-items: center;
+
+            @include pad {
+                margin-right: 30px;
+                padding-top: 8px;
+            }
+
+            @include mob {
+                margin-right: 0;
+            }
+
+            a {
+                margin-right: 30px;
+
+                @include pad {
+                    margin-right: 0;
+                }
+            }
+
+        }
+    }
+
+    .productImg {
+        img {
+            display: block;
+            width: 635px;
+            height: 320px;
+
+            @include pad {
+                width: 390px;
+                height: 168px;
+            }
+
+            @include mob {
+                display: none;
+            }
+        }
+    }
+
+    .text_icon {
+        img {
+            width: 44px;
+            height: 44px;
+            margin-right: 10px;
+        }
+
+        a {
+            font-size: 48px;
+            line-height: 72px;
+            color: #AA0601;
+            font-weight: bold;
+            text-decoration: none;
+
+            @include pad {
+                font-size: 28px;
+            }
+
+            @include mob {
+                font-size: 28px;
+            }
+        }
+
+        @include mob {
+            width: 345px;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+
+
+    .optical {
+        @include mob {
+            width: 345px;
+            height: 134px;
+            background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-1.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+
+    .sunglasses {
+        @include mob {
+            width: 345px;
+            height: 134px;
+            background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-2.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .functional {
+        @include mob {
+            width: 345px;
+            height: 134px;
+            background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-3.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+}
+
+.co-brand {
+    background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/bg.png');
+    height: 705px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+    text-align: center;
+
+    @include pad {
+        background-size: cover;
+        height: 452px;
+    }
+
+    @include mob {
+        background-size: cover;
+        height: 100%;
+        // height: 719px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 72px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        color: #FFFFFF;
+
+        @include pad {
+            padding-top: 40px;
+            padding-bottom: 32px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        @include mob {
+            padding-top: 32px;
+            padding-bottom: 20px;
+            font-size: 20px;
+            line-height: 48px;
+        }
+    }
+
+    .brand {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+
+        @include mob {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 24px;
+        }
+
+        a {
+            font-size: 72px;
+            line-height: 108px;
+            color: #AA0601;
+            text-decoration: none;
+
+            @include pad {
+                font-size: 32px;
+                line-height: 25px;
+            }
+
+        }
+
+        .doubleA {
+
+            background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-8.png');
+        }
+
+        .youth {
+
+            background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-9.png');
+
+
+        }
+
+        .co-box {
+            width: 540px;
+            height: 455px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include pad {
+                width: 330px;
+                height: 278px;
+                background-size: cover;
+            }
+
+            @include mob {
+                width: 345px;
+                height: 291px;
+                margin-bottom: 16px;
+            }
         }
     }
 }
