@@ -349,6 +349,7 @@
     h2 {
         font-size: 48px;
         line-height: 72px;
+        font-weight: bold;
         padding-top: 60px;
         padding-bottom: 40px;
         color: #FFFFFF;
@@ -395,12 +396,15 @@
 
         .doubleA {
 
-            background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-8.png');
+            background: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-8.png'), #ffffffab;
+            background-blend-mode: screen;
+
         }
 
         .youth {
 
-            background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-9.png');
+            background: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-9.png'), #ffffffab;
+            background-blend-mode: screen;
 
 
         }
@@ -425,4 +429,245 @@
             }
         }
     }
+}
+
+
+.recommend {
+    h2 {
+        text-align: center;
+        font-size: 48px;
+        line-height: 72px;
+        color: #650300;
+        font-weight: bold;
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        @include pad {
+            font-size: 32px;
+            line-height: 48px;
+            padding-top: 40px;
+            padding-bottom: 32px;
+        }
+
+        @include mob {
+            padding-top: 32px;
+            padding-bottom: 20px;
+            font-size: 20px;
+            line-height: 48px;
+        }
+    }
+
+    .cos_card {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+
+        @include pad {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 24px;
+        }
+
+        @include mob {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 24px;
+        }
+
+        .card {
+            width: 255px;
+            box-shadow: 0px 2px 6px #00000029;
+            border: 1px solid #DEE2E6;
+            border-radius: 4px;
+            opacity: 1;
+
+            @include pad {
+                width: 330px;
+                margin-bottom: 32px;
+            }
+
+            @include mob {
+                width: 345px;
+                margin-bottom: 16px;
+            }
+
+
+            img {
+                display: block;
+                height: 256px;
+
+                @include pad {
+                    width: 330px;
+                }
+
+                @include mob {
+                    width: 345px;
+                }
+            }
+
+            .re_text {
+                height: 204px;
+                padding-top: 16px;
+                position: relative;
+
+                .cos_name {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #212529;
+                    padding-bottom: 8px;
+                    padding-left: 16px;
+                    padding-right: 16px;
+                }
+
+                .dateType {
+                    color: #707070;
+                    text-align: bottom;
+                    position: absolute;
+                    bottom: 16px;
+                }
+            }
+
+        }
+
+    }
+}
+
+.contactUs {
+    background: #AA06010D;
+
+
+    h2 {
+        text-align: center;
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: bold;
+        padding-top: 60px;
+        padding-bottom: 24px;
+
+        @include pad {
+            padding-top: 40px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+        @include mob{
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 20px;
+            line-height: 48px;
+        }
+    }
+
+    .contactForm {
+        max-width: 730px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 80px;
+
+        @include pad {
+            max-width: 450px;
+            padding-bottom: 56px;
+        }
+        @include mob {
+            max-width: 345px;
+            padding-bottom: 56px;
+        }
+
+        p {
+            margin-bottom: 20px;
+
+            @include pad {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+        }
+
+        input,
+        textarea {
+            background: #ffffff00;
+            font-size: 20px;
+            line-height: 30px;
+            padding-left: 16px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            margin-bottom: 16px;
+            border-width: 1px;
+
+            @include pad {
+                font-size: 14px;
+                line-height: 21px;
+                padding-left: 8px;
+                padding-top: 12px;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+            }
+
+        }
+
+        label {
+            @include pad {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+
+        .formButton {
+            width: 350px;
+            height: 54px;
+            color: #FFFFFF;
+            background: #AA0601;
+            border: none;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 auto;
+            padding: 0;
+
+            @include pad {
+                width: 210px;
+                height: 40px;
+            }
+
+            @include mob {
+                width: 165px;
+                height: 36px;
+            }
+        }
+    }
+
+    .formCheck {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 24px;
+        border-width: 1px;
+
+        @include pad {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 24px;
+            height: 24px;
+            align-items: center;
+            margin: 0;
+        }
+
+        label {
+            padding-left: 4px;
+
+            @include pad {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+
+
+
 }
