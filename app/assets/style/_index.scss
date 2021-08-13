@@ -1,5 +1,5 @@
 .banner {
-    background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/banner.png');
+    background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/banner.png');
     height: 840px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -7,7 +7,7 @@
     background-size: cover;
 
     @include mob {
-        background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/banner-sm.png');
+        background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/banner-sm.png');
         height: 394px;
         width: 375px;
         background-repeat: no-repeat;
@@ -295,7 +295,7 @@
         @include mob {
             width: 345px;
             height: 134px;
-            background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-1.png");
+            background: url("./assets/images/product-1.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -307,7 +307,7 @@
         @include mob {
             width: 345px;
             height: 134px;
-            background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-2.png");
+            background: url("./assets/images/product-2.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -318,7 +318,7 @@
         @include mob {
             width: 345px;
             height: 134px;
-            background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-3.png");
+            background: url("./assets/images/product-3.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -328,7 +328,7 @@
 }
 
 .co-brand {
-    background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/bg.png');
+    background-image: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/bg.png');
     height: 705px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -396,14 +396,14 @@
 
         .doubleA {
 
-            background: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-8.png'), #ffffffab;
+            background: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/product-8.png'), #ffffffab;
             background-blend-mode: screen;
 
         }
 
         .youth {
 
-            background: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-9.png'), #ffffffab;
+            background: url('https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/product-9.png'), #ffffffab;
             background-blend-mode: screen;
 
 
