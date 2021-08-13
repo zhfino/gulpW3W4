@@ -308,7 +308,7 @@ img {
         margin-top: 8px; } }
 
 .banner {
-  background-image: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/banner.png");
+  background-image: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/banner.png");
   height: 840px;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -316,7 +316,7 @@ img {
   background-size: cover; }
   @media (max-width: 767px) {
     .banner {
-      background-image: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/banner-sm.png");
+      background-image: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/banner-sm.png");
       height: 394px;
       width: 375px;
       background-repeat: no-repeat; } }
@@ -571,7 +571,7 @@ img {
     .productType .optical {
       width: 345px;
       height: 134px;
-      background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-1.png");
+      background: url("./assets/images/product-1.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; } }
@@ -579,7 +579,7 @@ img {
     .productType .sunglasses {
       width: 345px;
       height: 134px;
-      background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-2.png");
+      background: url("./assets/images/product-2.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; } }
@@ -587,13 +587,13 @@ img {
     .productType .functional {
       width: 345px;
       height: 134px;
-      background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-3.png");
+      background: url("./assets/images/product-3.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; } }
 
 .co-brand {
-  background-image: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/bg.png");
+  background-image: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/bg.png");
   height: 705px;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -657,10 +657,10 @@ img {
           font-size: 32px;
           line-height: 25px; } }
     .co-brand .brand .doubleA {
-      background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-8.png"), #ffffffab;
+      background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/product-8.png"), #ffffffab;
       background-blend-mode: screen; }
     .co-brand .brand .youth {
-      background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/main/app/assets/images/product-9.png"), #ffffffab;
+      background: url("https://raw.githubusercontent.com/zhfino/gulpW3W4/master/app/assets/images/product-9.png"), #ffffffab;
       background-blend-mode: screen; }
     .co-brand .brand .co-box {
       width: 540px;
